@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./image/baelle.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
+
+h1,
+p {
+  text-align: center;
+  font-size: 6rem;
+  color: lightgrey;
+}
+p {
+  font-size: 2rem;
+}
+li {
+  list-style-type: none;
+  font-size: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+#numbers:nth-child(-n + 5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+
+  border: solid 1px #555;
+  background-color: lightgray;
+  box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+}
+#numbers:nth-child(n + 6) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+
+  border: solid 1px #555;
+  background-color: gold;
+  box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.6);
+
+  clip-path: polygon(
+    50% 2.45%,
+    61.8% 38.77%,
+    100% 38.77%,
+    69.1% 61.23%,
+    80.9% 97.55%,
+    50% 75.1%,
+    19.1% 97.55%,
+    30.9% 61.23%,
+    0% 38.77%,
+    38.2% 38.77%
+  );
+}
+.btn-primary {
+  width: 50%;
+}
+.btn-primary,
+.btn-dark {
+  padding: 1rem;
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 4rem;
+  }
+  li {
+    font-size: 3rem;
+  }
+}
