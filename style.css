@@ -91,4 +91,12 @@ li {
   li {
     font-size: 3rem;
   }
+  #numbers:nth-child(-n + 5) {
+    width: 80px;
+    height: 80px;
+  }
+  #numbers:nth-child(n + 6) {
+    width: 120px;
+    height: 120px;
+  }
 }
